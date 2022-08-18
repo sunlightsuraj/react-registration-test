@@ -1,0 +1,50 @@
+header {
+    background-color: rgba(40, 40, 44, 0.979);
+    height: 70px;
+    position: relative;
+}
+.logo {
+    height: 100%;
+    width: auto;
+    position: relative;
+    display: inline-block;
+}
+.header-logo {
+    height: 100%;
+}
+
+.header-menu-list {
+    list-style: none;
+    width: auto;
+    height: 100%;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu-item {
+    width: auto;
+    height: 100%;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+.header-menu-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 26px 10px;
+    display: block;
+}
+
+.header-menu-link:hover, .header-menu-link:active {
+    background-color: rgb(159, 170, 170);
+    color: rgba(40, 40, 44, 0.979);
+}
+
+.container {
+    text-align: center;
+}

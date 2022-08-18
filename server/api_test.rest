@@ -1,0 +1,37 @@
+POST http://localhost:3002/users
+Content-Type: application/json
+
+{
+    "first_name": "Suraj",
+    "last_name": "Shrestha",
+    "email": "suraj4@example.com",
+    "password": "suraj1",
+    "business_name": "Some Company Pvt. Ltd."
+}
+
+#####
+
+POST http://localhost:3002/auth/login
+Content-Type: application/json
+
+{
+    "email": "suraj@hotmail.com",
+    "password": "suraj123"
+}
+
+#####
+
+POST http://localhost:3002/auth/token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJ1c2VyX2NvZGUiOiIwLjc0ODU5MTk0MzM5NjM0MzciLCJmaXJzdF9uYW1lIjoiU3VyYWoiLCJsYXN0X25hbWUiOiJTaHJlc3RoYSIsImVtYWlsIjoic3VyYWpAZXhhbXBsZS5jb20iLCJpYXQiOjE2Mjc2NTQ5ODAsImV4cCI6MTYyNzY1NjE4MH0.Q27_35MeIItOMatqAwY7Er0P9_9MrjGuj7yQn1jX0VI"
+}
+
+
+####
+
+GET http://localhost:3002/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ1c2VyX2NvZGUiOiI3OTJjMTAwOTI5ZTA0ZTBhOTFjMmVhOWIzM2ViMGQzMiIsImZpcnN0X25hbWUiOiJTdXJhaiIsImxhc3RfbmFtZSI6IlNocmVzdGhhIiwiZW1haWwiOiJzdXJhakBob3RtYWlsLmNvbSIsImlhdCI6MTYyNzcyMjAzNywiZXhwIjoxNjI3NzIyNjM3fQ.HQBW5BqhXLW3XIhP2m12SUHjFHxyykbCyqwBcz3_dGM
+  
